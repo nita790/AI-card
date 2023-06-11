@@ -1,0 +1,216 @@
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------- 共用 ---------------- */
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a:hover{
+  color: #f18724;
+}
+
+/* --------------- 應用 ---------------- */
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.application-item-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.application-item{
+  max-width: 32%;
+  border-radius: 16px;
+  border: 1px solid #f2f2f2;
+  overflow: hidden;
+}
+
+.item-img img{
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.item-content,
+.item-name,
+.item-info{
+  padding: 20px 32px;
+  border: 1px solid #f2f2f2;
+}
+
+.item-content{
+  height: 120px;
+}
+
+.item-content h4{
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 900;
+  padding-bottom: 12px;
+}
+
+.item-content p{
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #525252;
+}
+
+.item-name,
+.item-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-name h4{
+  font-weight: 900;
+}
+
+.item-info a{
+  font-weight: 400;
+}
+
+/* ------------- 響應式 平板以下 -------------- */
+
+@media (max-width:991px){
+  .container{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/* ------------- 響應式 手機 -------------- */
+
+@media (max-width:767px){
+  .container{
+    max-width: 700px;
+  }
+
+  .application-item-group{
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  
+  .application-item{
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
